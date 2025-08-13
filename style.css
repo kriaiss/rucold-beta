@@ -165,7 +165,7 @@ li:hover ul {
     height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/images/blue-abstract-fluid-background-vector.jpg);
+    background-image: url(images/blue-abstract-fluid-background-vector.jpg);
     padding-left: 20vw;
     padding-right: 20vw;
     border-bottom-left-radius: 20px;
@@ -499,4 +499,5 @@ footer {
     color: #01B2FF;
     font-weight: 700;
     font-size: 24px;
+
 }
