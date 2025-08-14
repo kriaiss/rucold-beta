@@ -1,3 +1,14 @@
+let burger = true; // Заменили const на let
+
+$('.burger-menu-button').on('click', function() {
+    if (burger) {
+        $('.burger').css('display', 'flex');
+    } else {
+        $('.burger').css('display', 'none');
+    }
+    burger = !burger; // Инвертируем значение после проверки
+});
+
 anime({
     targets: '.heading-main',
     opacity: 1,

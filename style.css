@@ -2,6 +2,7 @@
     font-family: "Nata Sans", sans-serif;
     font-weight: 300;
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,7 +17,7 @@ header {
     position: fixed;
     background-color: white;
     flex-direction: column;
-    z-index: 10;
+    z-index: 21;
 }
 
 .high-header {
@@ -161,11 +162,51 @@ li:hover ul {
     color: #01B2FF;
 }
 
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    height: 70%;
+    margin-top: 15px;
+}
+
+.burger-menu-button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.burger {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    z-index: 20;
+}
+
+.burger-link {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
 .main-info {
     height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/blue-abstract-fluid-background-vector.jpg);
+    background-image: url(/images/blue-abstract-fluid-background-vector.jpg);
     padding-left: 20vw;
     padding-right: 20vw;
     border-bottom-left-radius: 20px;
@@ -245,6 +286,26 @@ li:hover ul {
     transition: 0.5s;
     color: white;
     background-color: #01B2FF;
+}
+
+.button-adaptive {
+    transition: 0.5s;
+    background-color: #01B2FF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 1600px;
+    border: 1px solid #DBDBDB;
+    margin-top: 0px;
+    color: white;
+}
+
+.button-adaptive:hover {
+    transition: 0.5s;
+    color: #01B2FF;
+    background-color: white;
 }
 
 .second-info {
@@ -408,6 +469,17 @@ li:hover ul {
     border-radius: 1600px;
 }
 
+.application-main-part-b-part-button {
+    display: flex;
+    width: 70%;
+    text-decoration: none;
+    color: #01B2FF;
+    height: 60px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 1600px;
+}
+
 #application-main-part-heading {
     text-align: end;
     color: white;
@@ -419,6 +491,20 @@ li:hover ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.application-main-part-c-part {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+#adaptive-button-b-part {
+    display: none;
+}
+
+.adaptive-main-part-b-part {
+    display: none;
 }
 
 .sphere {
@@ -465,13 +551,24 @@ li:hover ul {
     height: 600px;
     background-color: #d9f3ff;
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     padding-left: 20vw;
     padding-right: 20vw;
-    justify-content: space-between;
+}
+
+.contacts-a-part {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 30%;
 }
 
 .contacts-b-part {
-    margin-left: 9%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
 .contacts-heading {
@@ -483,6 +580,12 @@ li:hover ul {
     color: #01B2FF;
     margin-top: 30%;
     margin-bottom: 12%;
+}
+
+.contacts-paragraph {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
 }
 
 footer {
@@ -499,5 +602,304 @@ footer {
     color: #01B2FF;
     font-weight: 700;
     font-size: 24px;
+}
 
+@media (max-width: 1775px) {
+    .sphere-low {
+        margin-top: 1%;
+    }
+}
+
+@media (max-width: 1685px) {
+    #sphere-1 {
+        display: none;
+    }
+
+    #sphere-2 {
+        display: none;
+    }
+
+    .high-header {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .separator {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    .low-header {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .main-info {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .second-info {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    
+    .third-info-a-part {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .third-info-b-part {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .application-main-part {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .dealers {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .contacts {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+@media (max-width: 1630px) {
+    #galery-heading {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 1150px) {
+    #galery-heading {
+        margin-top: 7%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #galery-heading {
+        margin-top: 15%;
+    }
+
+    .button-a {
+        width: 50%;
+    }
+
+    #low-a-off {
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .low-header {
+        display: none;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .high-header {
+        height: 100%;
+    }
+
+    header {
+        height: 100px;
+        width: 100%;
+    }
+
+    .main-info {
+        text-align: center;
+        align-items: center;
+    }
+
+    .button-a {
+        width: 60%;
+    }
+
+    .second-info {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #second-info-paragraph {
+        text-align: center;
+    }
+
+    #second-info-heading {
+        text-align: center;
+    }
+
+    .third-info-b-part {
+        text-align: center;
+        align-items: center;
+    }
+
+    #third-info-b-part-b-part-heading {
+        display: none;
+    }
+
+    #third-info-b-part-b-part-paragraph {
+        text-align: center;
+        width: auto;
+    }
+
+    .application-main-part {
+        height: 1200px;
+    }
+
+    .application-main-part-a-part {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .application-main-part-b-part {
+        display: none;
+    }
+
+    .adaptive-main-part-b-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #adaptive-button-a-part {
+        display: none;
+    }
+
+    #adaptive-button-b-part {
+        display: flex;
+        width: 60%;
+    }
+
+    #application-main-part-heading {
+        text-align: center;
+    }
+
+    #galery-heading {
+        margin-top: 3%;
+    }
+
+    .galery-button-a {
+        width: 60%;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 900px;
+    }
+    
+    .contacts-a-part {
+        width: 100%;
+    }
+
+    .contacts-b-part {
+        width: 100%;
+    }
+
+    .contacts-heading {
+        margin-top: 7%;
+        margin-bottom: 7%;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    #contacts-a-part-heading {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .application-main-part-b-part-button {
+        width: 80%;
+    }
+
+    #adaptive-button-b-part {
+        width: 70%;
+    }
+}
+
+@media (max-width: 470px) {
+    * {
+        font-size: 18px;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    .burger {
+        margin-top: 70px;
+    }
+
+    .application-main-part-b-part-button {
+        width: 100%;
+    }
+
+    #adaptive-button-b-part {
+        width: 90%;
+    }
+
+    .contacts-heading {
+        font-size: 28px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .heading-main {
+        font-size: 28px;
+    }
+
+    .rucold-heading {
+        font-size: 28px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .paragraph-main {
+        font-size: 18px;
+    }
+
+    .contacts-paragraph {
+        font-size: 18px;
+    }
+
+    .footer-a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 376px) {
+    .contacts-heading {
+        font-size: 22px;
+    }
+
+    #button-adaptive-function h2 {
+        margin-top: 6%;
+        font-size: 16px !important;
+    }
 }

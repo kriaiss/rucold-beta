@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RuColD - Холодильные сплит-системы и ККБ </title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -18,30 +20,34 @@
             <a href="" class="link">rucold@bk.ru</a>
             <img src="/images/imgonline-com-ua-Tra.png" alt="" class="logo">
             <a href="" class="link">8-347-262-92-99</a>
+            <div class="burger-menu">
+                <img src="images/icons8-menu.svg" alt=""  class="burger-menu-button">
+            </div>
         </div>
         <div class="separator"></div>
         <div class="low-header">
             <ul class="menu">
             <li><a href="" class="catalog">Каталог оборудования<img src="/images/Sort Up.png" alt="" class="sort"></a>
                 <ul class="catalogic"> 
-                    <li><a href="" class="high-li">Цветы</a></li> 
-                    <li><a href="">Разливные напитки</a></li> 
-                    <li><a href="">Сыр</a></li> 
-                    <li><a href="">Погреба</a></li> 
-                    <li><a href="">Кондитерская продукция</a></li> 
-                    <li><a href="">Овощи</a></li> 
-                    <li><a href="">Мясо</a></li> 
-                    <li><a href="">Фармацевтика</a></li>
-                    <li><a href="" class="low-li">Молоко</a></li>
+                    <li><a href="" class="high-li">Серия HS</a></li> 
+                    <li><a href="">Серия MS</a></li> 
+                    <li><a href="">Серия BS</a></li> 
+                    <li><a href="" class="low-li">ККБ</a></li>
                 </ul>
             </ul>
-            <a href="" class="low-a">Где купить?</a>
-            <a href="" class="low-a">Дилерам</a>
-            <a href="" class="low-a">Контактная информация</a>
+            <a href="" class="low-a" id="low-a-off">Где купить?</a> 
+            <a href="#dealers" class="low-a">Дилерам</a>
+            <a href="#contacts" class="low-a">Контактная информация</a>
         </div>
         <div class="separator"></div>
     </header>
     <main>
+        <div class="burger">
+            <a href="" class="burger-link">Каталог оборудования</a>
+            <a href="" class="burger-link">Где купить?</a>
+            <a href="#dealers" class="burger-link">Дилерам</a>
+            <a href="#contacts" class="burger-link">Контактная информация</a>
+        </div>
         <div class="main-info">
             <div class="main-text">
                 <h2 class="heading-main">Холодильные сплит-системы и ККБ <span class="rucold-heading">RuColD</span></h2>
@@ -69,7 +75,7 @@
                     <p class="paragraph">Мы производим энергосберегающие холодильные сплит-системы для холодильных камер или теплоизолированных помещений и компрессорно-конденсаторные блоки для холодоснабжения торгового оборудования.</p>
                 </div>
                 <div class="third-info-b-part-b-part">
-                    <h2 class="heading">А также...</h2>
+                    <h2 class="heading" id="third-info-b-part-b-part-heading">А также...</h2>
                     <p class="paragraph" id="third-info-b-part-b-part-paragraph">Внедряем инновационные технологические решения в повседневные задачи бизнеса и решаем самые нестандартные задачи, бережно сохраняя ваш продукт.</p>
                 </div>
             </div>
@@ -77,16 +83,73 @@
         <div class="application">
             <div class="application-main-part">
                 <div class="application-main-part-a-part">
-                        <a href="" class="application-main-part-a-part-button">
+                        <a href="" class="application-main-part-a-part-button" id="adaptive-button-a-part">
                             <div class="button">
                                 <h2>Каталог оборудования</h2>
                             </div>
                         </a>
                         <h2 class="heading" id="application-main-part-heading">Применение оборудования</h2>
+                        <div class="adaptive-main-part-b-part">
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive">
+                                    <h2>Разливные напитки</h2>
+                                </div>
+                            </a>
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive">
+                                    <h2>Овощи и фрукты</h2>
+                                </div>
+                            </a>
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive">
+                                    <h2>Мясо</h2>
+                                </div>
+                            </a>
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive" id="button-adaptive-function">
+                                    <h2>Кондитерская промышленность</h2>
+                                </div>
+                            </a>
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive">
+                                    <h2>Фармацевтика</h2>
+                                </div>
+                            </a>
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive">
+                                    <h2>Цветочный магазин</h2>
+                                </div>
+                            </a>
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive">
+                                    <h2>Хранение семян цветов</h2>
+                                </div>
+                            </a>
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive">
+                                    <h2>Молочная продукция</h2>
+                                </div>
+                            </a>
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive">
+                                    <h2>Созревание сыра</h2>
+                                </div>
+                            </a>
+                            <a href="" class="application-main-part-b-part-button">
+                                <div class="button-adaptive">
+                                    <h2>Погреба</h2>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="" class="application-main-part-a-part-button" id="adaptive-button-b-part">
+                            <div class="button">
+                                <h2>Каталог оборудования</h2>
+                            </div>
+                        </a>
                 </div>
                 <div class="application-main-part-b-part">
                     <a href="" class="sphere"><img src="images/Group 10.png" alt=""></a>
-                    <a href="" class="sphere"><img src="images/Group 15.png" alt=""></a>
+                    <a href="" class="sphere" id="sphere-1"><img src="images/Group 15.png" alt=""></a>
                     <a href="" class="sphere"><img src="images/Group 11.png" alt=""></a>
                     <a href="" class="sphere"><img src="images/Group 12.png" alt=""></a>
                     <a href="" class="sphere"><img src="images/Group 4.png" alt=""></a>
@@ -95,7 +158,7 @@
                     <a href="" class="sphere-low"><img src="images/Group 6.png" alt=""></a>
                     <a href="" class="sphere-low"><img src="images/Group 7.png" alt=""></a>
                     <a href="" class="sphere-low"><img src="images/Group 8.png" alt=""></a>
-                    <a href="" class="sphere-low"><img src="images/Group 9.png" alt=""></a>
+                    <a href="" class="sphere-low" id="sphere-2"><img src="images/Group 9.png" alt=""></a>
                     <a href="" class="sphere-low"><img src="images/Group 5.png" alt=""></a>
                 </div>
             </div>
@@ -130,19 +193,19 @@
                 </div>
             </a>
         </div>
-        <div class="dealers">
+        <div class="dealers" id="dealers">
             <h2 class="heading" id="dealers-heading">Дилерам</h2>
         </div>
-        <div class="contacts">
+        <div class="contacts" id="contacts">
             <div class="contacts-a-part">
-                <h2 class="contacts-heading">Контакты</h2>
-                <p class="paragraph"><span class="rucold">RuColD</span> - Производитель холодильных сплит систем и ККБ.
-                Адрес производственной площадки: Российская Федерация, Республика Башкортостан, Уфимский район, с. Булгаково, ул. Цурюпы 33, корпус 3.  
+                <h2 class="contacts-heading" id="contacts-a-part-heading">Контакты</h2>
+                <p class="contacts-paragraph"><span class="rucold">RuColD</span> - Производитель холодильных сплит систем и ККБ.<br>
+                Адрес производственной площадки: Российская Федерация, Республика Башкортостан, Уфимский район, с. Булгаково, ул. Цурюпы 33, корпус 3.<br>
                 E-mail для связи: rucold@bk.ru</p>
             </div>
             <div class="contacts-b-part">
                 <h2 class="contacts-heading">Представительства</h2>
-                <p class="paragraph">г. Уфа, ул. Кавказская, д. 6/10, ООО "ЮСКО-Маркет",<br>
+                <p class="contacts-paragraph">г. Уфа, ул. Кавказская, д. 6/10, ООО "ЮСКО-Маркет",<br>
                 тел. +7 (347) 262-92-99 <br>
                 г. Самара, ул. Вольская д. 71, ПромХолд, <br>
                 тел. +7 (937) 84-24-136 <br>
@@ -152,7 +215,7 @@
         </div>
     </main>
     <footer>
-        <a href="" class="footer-a">© <script>document.write(/\d{4}/.exec(Date())[0])</script>, RuColD</a>
+        <a href="" class="footer-a">© 2009-<script>document.write(/\d{4}/.exec(Date())[0])</script>, RuColD</a>
     </footer>
     <script src="anime.min.js"></script>
     <script src="script.js"></script>
