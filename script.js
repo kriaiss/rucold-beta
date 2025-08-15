@@ -1,4 +1,6 @@
-let burger = true; 
+let burger = true;
+
+$('.sphere').css('translate', '300');
 
 var animation_burger = anime({
     targets: '.burger-menu-button',
