@@ -6,9 +6,11 @@
 }
 
 body {
+    overflow-x: hidden;
     width: 100%;
     margin: 0;
     background-color: #01B2FF;
+    -webkit-overflow-scrolling: touch;
 }
 
 header {
@@ -379,6 +381,10 @@ li:hover ul {
     width: 60%;
 }
 
+.slick-slide img {
+    max-width: 100%;
+}
+
 .slick-list {
     height: 23vw !important;
 }
@@ -607,6 +613,11 @@ footer {
     color: #01B2FF;
     font-weight: 700;
     font-size: 24px;
+}
+
+.sphere, .sphere-low, .third-info-a-part-paragraph-1, 
+.third-info-a-part-paragraph-2, .third-info-a-part-paragraph-3 {
+    will-change: transform;
 }
 
 @media (max-width: 1775px) {
