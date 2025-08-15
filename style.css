@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 150px;
     display: flex;
     position: fixed;
@@ -534,6 +534,10 @@ li:hover ul {
     scale: 1.2;
 }
 
+.slick-slider {
+    width: 100vw !important;
+}
+
 .dealers {
     height: 600px;
     padding-left: 20vw;
@@ -890,6 +894,14 @@ footer {
 
     .footer-a {
         font-size: 18px;
+    }
+
+    .burger-menu {
+        margin-top: 3%;
+        width: 15%;
+    }
+    .button-a {
+        width: 100%;
     }
 }
 

@@ -1,12 +1,30 @@
-let burger = true; // Заменили const на let
+let burger = true; 
+
+var animation_burger = anime({
+    targets: '.burger-menu-button',
+    duration: 500,
+    easing: 'easeInOutSine',
+    rotate: 90,
+    autoplay: false
+})
+
+var animation_burger_back = anime({
+    targets: '.burger-menu-button',
+    duration: 500,
+    easing: 'easeInOutSine',
+    rotate: 0,
+    autoplay: false
+})
 
 $('.burger-menu-button').on('click', function() {
     if (burger) {
         $('.burger').css('display', 'flex');
+        animation_burger.play()
     } else {
         $('.burger').css('display', 'none');
+        animation_burger_back.play()
     }
-    burger = !burger; // Инвертируем значение после проверки
+    burger = !burger;
 });
 
 anime({
