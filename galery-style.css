@@ -86,6 +86,11 @@ header {
     border: 0;
 }
 
+.catalogic {
+    display: none;
+    flex-direction: row;
+}
+
 .sort {
     transition: 0.5s;
     padding-left: 5px;
@@ -118,7 +123,7 @@ header {
 }
 
 ul {
-    width: 180px;
+    width: 240px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -131,6 +136,7 @@ li ul {
 }
 
 li a {
+    width: 180px;
     font-size: 18px;
     transition: 0.5s;
     display: block;
@@ -153,7 +159,19 @@ li a:hover {
 }
    
 li:hover ul {
-    display: block;
+    display: flex;
+}
+
+.image-preview {
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 1px solid #DBDBDB;
+}
+
+.image-preview-container {
+    display: none;
 }
 
 .low-a {

@@ -2,6 +2,50 @@ let burger = true;
 
 $('.sphere').css('translate', '300');
 
+$(document).ready(function() {
+    $('#image-preview-button-1').hover(
+        function() {
+            $('#image-preview-1').show();
+        },
+        function() {
+            $('#image-preview-1').hide();
+        }
+    );
+});
+
+$(document).ready(function() {
+    $('#image-preview-button-2').hover(
+        function() {
+            $('#image-preview-2').show();
+        },
+        function() {
+            $('#image-preview-2').hide();
+        }
+    );
+});
+
+$(document).ready(function() {
+    $('#image-preview-button-3').hover(
+        function() {
+            $('#image-preview-3').show();
+        },
+        function() {
+            $('#image-preview-3').hide();
+        }
+    );
+});
+
+$(document).ready(function() {
+    $('#image-preview-button-4').hover(
+        function() {
+            $('#image-preview-4').show();
+        },
+        function() {
+            $('#image-preview-4').hide();
+        }
+    );
+});
+
 $('.image-button-1').on('click', function() {
     console.log('Клик зарегистрирован');
     $('#fullscreen-photo-1').css('display', 'flex')
