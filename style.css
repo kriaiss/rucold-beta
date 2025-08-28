@@ -571,9 +571,68 @@ li:hover ul {
 }
 
 .dealers {
-    height: 600px;
+    height: 900px;
     padding-left: 20vw;
     padding-right: 20vw;
+}
+
+.dealers-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dealers-container-part-a {
+    height: 250px;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.dealers-container-part-b {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.dealers-button-a {
+    text-decoration: none;
+    color: #01B2FF;
+    margin-top: 7%;
+    width: 70%;
+    border-radius: 1600px;
+}
+
+.dealers-button {
+    transition: 0.5s;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 1600px;
+    border: 1px solid #DBDBDB;
+}
+
+.dealers-button:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: #01B2FF;
 }
 
 #dealers-heading {
@@ -581,6 +640,10 @@ li:hover ul {
     text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
+}
+
+#dealers-rucold {
+    color: white;
 }
 
 .contacts {
