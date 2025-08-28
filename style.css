@@ -797,6 +797,14 @@ footer {
     #low-a-off {
         display: none;
     }
+
+    .dealers {
+        height: 1100px;
+    }
+
+    .dealers-button-a {
+        width: 130%;
+    }
 }
 
 @media (max-width: 940px) {
@@ -946,6 +954,10 @@ footer {
     #adaptive-button-b-part {
         width: 70%;
     }
+
+    .dealers {
+        height: 1300px;
+    }
 }
 
 @media (max-width: 470px) {
@@ -1015,6 +1027,14 @@ footer {
 }
 
 @media (max-width: 376px) {
+    .dealers {
+        height: 1500px;
+    }
+
+    .dealers-button-a {
+        width: 190%;
+    }
+    
     .contacts-heading {
         font-size: 22px;
     }
